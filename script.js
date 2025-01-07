@@ -5,8 +5,8 @@ const sc = document.querySelector("#shopping-cart-button");
 const searchForm = document.querySelector(".search-form");
 const searchBox = document.querySelector("#search-box");
 const shoppingCart = document.querySelector(".shopping-cart");
-const itemDetailModal = document.querySelector("#item-detail-modal");
-const itemDetailButtons = document.querySelector(".item-detail-button");
+const itemDetailModal = document.querySelector(".modal");
+const itemDetailButtons = document.querySelectorAll(".item-detail-button");
 
 hm.onclick = () => {
   navbarNav.classList.toggle("active");
