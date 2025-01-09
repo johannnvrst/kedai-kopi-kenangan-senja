@@ -466,10 +466,19 @@ footer .credit a {
   top: 0;
   width: 100%;
   height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  z-index: 9999;
   overflow: auto;
   background-color: rgba(0, 0, 0, 0.7);
 }
 
+/* Show modal */
+/* .modal.show {
+  visibility: visible;
+  opacity: 1;
+} */
+
+/* Modal container */
 .modal-container {
   position: relative;
   background-color: #fefefe;
@@ -477,7 +486,7 @@ footer .credit a {
   margin: 15% auto;
   padding: 1.2rem;
   border: 1px solid #666;
-  width: 80%;
+  width: 50%;
   animation: animateModal 0.5s;
 }
 
@@ -498,31 +507,43 @@ footer .credit a {
   right: 1rem;
 }
 
+/* Modal content */
 .modal-content {
   display: flex;
   flex-wrap: nowrap;
 }
 
+/* Image */
 .modal-content img {
-  height: 20rem;
+  height: 17.5rem;
   margin-right: 2rem;
   margin-bottom: 2rem;
 }
 
-.modal-content p {
-  font-size: 1.2rem;
-  line-height: 1.8rem;
-  margin-top: 1.2rem;
+/* Button */
+.button {
+  margin-top: 10px;
 }
 
-.modal-content a {
+.button button {
   display: flex;
-  gap: 1rem;
-  width: 12rem;
-  background-color: var(--primary);
-  color: #fff;
-  margin-top: 1rem;
-  padding: 1rem 1.6rem;
+  align-items: center;
+  gap: 10px;
+  background-color: #b68d4c;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: bold;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.button button:hover {
+  background-color: #9c7742;
+  transform: scale(1.05);
 }
 
 @media (max-width: 1366px) {
